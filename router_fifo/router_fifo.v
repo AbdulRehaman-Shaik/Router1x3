@@ -7,8 +7,8 @@ module router_fifo #(parameter WIDTH = 8,DEPTH = 16)
 	             input lfd_state,
 	             input [(WIDTH-1):0]data_in,  
 	             output reg [(WIDTH-1):0]data_out, 
-	             output empty,    
-	             output full);
+	             output full,    
+	             output empty);
 
     
    //Internal variables
