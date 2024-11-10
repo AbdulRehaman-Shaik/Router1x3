@@ -1,18 +1,18 @@
 module router_reg(input       clock,
 		  input       resetn,
 		  input       pkt_valid,
-		  input  [7:0]data_in,
 		  input       fifo_full,
 		  input       rst_int_reg,
 		  input       detect_add,
 		  input       ld_state,
-                  input       lfd_state,
 		  input       laf_state,
-		  input       full_state,									 
+		  input       full_state,
+		  input       lfd_state,
+		  input  [7:0]data_in,
 	          output  reg  parity_done,
 		  output  reg  low_pkt_valid,
-		  output  reg  [7:0] dout,
-		  output  reg  err);										
+		  output  reg  err,
+		 output  reg  [7:0] dout);										
 		
 
    //Internal registers
