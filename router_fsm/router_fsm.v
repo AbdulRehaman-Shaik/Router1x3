@@ -9,23 +9,23 @@
   `define CHECK_PARITY_ERROR  4'd7
 
 module router_fsm(input clock,
-	          input fifo_empty_0,fifo_empty_1,fifo_empty_2,
-		  input fifo_full,
+		  input resetn,
 		  input pkt_valid,
-		  input [1:0]data_in,
 		  input parity_done,
-		  input low_pkt_valid,
-		  input resetn, 
+		  input [1:0]data_in,
 		  input soft_reset_0,soft_reset_1,soft_reset_2,
+		  input fifo_full,
+		  input low_pkt_valid,
+	          input fifo_empty_0,fifo_empty_1,fifo_empty_2,
 
-		  output busy,   
 		  output detect_add,
-		  output write_enb_reg,			 
-		  output ld_state,       
-		  output laf_state,    
-		  output lfd_state,      
-		  output full_state,      
-		  output rst_int_reg); 
+		  output ld_state,
+		  output laf_state,
+		  output full_state,
+		  output write_enb_reg,
+		  output rst_int_reg,
+		  output lfd_state,
+		  output busy); 
 
 
 
