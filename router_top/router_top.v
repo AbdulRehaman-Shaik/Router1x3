@@ -1,10 +1,10 @@
 module router_top(input  clock,
 		  input          resetn,
-		  input          pkt_valid,
-		  input    [7:0] data_in,
 		  input          read_enb_0,
 		  input          read_enb_1,
 		  input          read_enb_2,
+		  input          pkt_valid,
+		  input    [7:0] data_in,
 
 		  output   [7:0] data_out_0,
 		  output   [7:0] data_out_1,
@@ -12,8 +12,8 @@ module router_top(input  clock,
 	 	  output         vld_out_0,
 		  output	 vld_out_1,
 		  output	 vld_out_2,
-		  output         busy,
-		  output         error);            
+		  output         error,
+		  output         busy);            
 										
 										
    //Internal wires
