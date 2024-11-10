@@ -5,7 +5,7 @@ wire [7:0]data_out;
 wire full,empty;
 integer i;
 
-router_fifo DUT(clock,resetn,soft_state,write_enb,read_enb,lfd_state,data_in,data_out,full,empty);
+	router_fifo DUT(clock,resetn,soft_reset,write_enb,read_enb,lfd_state,data_in,data_out,full,empty);
 
 initial
 begin
